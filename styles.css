@@ -4,12 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
-    background-image: url('media/background.jpeg'); /* Updated background image path */
+    background-image: url('media/background.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #d4d4d4;
-    overflow-x: hidden; /* Prevent sideways scrolling */
+    overflow-x: hidden;
 }
 
 header {
@@ -87,7 +87,7 @@ section p, section ul li, footer p {
 
 footer {
     text-align: center;
-    padding: 0.5em 0; /* Reduced footer size */
+    padding: 0.5em 0;
     background-color: rgba(0, 26, 0, 0.8);
     color: #d4d4d4;
     position: fixed;
@@ -119,16 +119,29 @@ a:hover {
 
 .project-container {
     display: flex;
-    flex-direction: column; /* Ensure the project boxes are displayed vertically */
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1em;
     margin: 1em 0;
     background-color: rgba(0, 34, 0, 0.8);
     border-radius: 5px;
     box-shadow: 0 0 5px #00FF00;
     transition: transform 0.3s;
+    width: 100%;
+    max-width: 600px;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
 }
 
 .project-box:hover {
@@ -136,7 +149,7 @@ a:hover {
 }
 
 #contact {
-    margin-bottom: 150px; /* Add margin to ensure the footer does not cover the links */
+    margin-bottom: 150px;
 }
 
 /* Responsive Design */
@@ -163,7 +176,7 @@ a:hover {
     }
 
     section:hover {
-        transform: none; /* Disable zoom effect on smaller screens */
+        transform: none;
     }
 
     .project-box {
@@ -193,7 +206,7 @@ a:hover {
     }
 
     section:hover {
-        transform: scale(1.02); /* Enable zoom effect on tablet screens */
+        transform: scale(1.02);
     }
 
     .project-box {
@@ -222,7 +235,7 @@ a:hover {
     }
 
     section:hover {
-        transform: scale(1.02); /* Enable zoom effect on desktop screens */
+        transform: scale(1.02);
     }
 
     .project-box {
