@@ -3,12 +3,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000;
+    background-color: #121212;
     color: #00FF00;
 }
 
 header {
-    background-color: #001a00;
+    background-color: #1a1a1a;
     color: #00FF00;
     text-align: center;
     padding: 1em 0;
@@ -21,10 +21,11 @@ header h1 {
 
 header p {
     margin: 0.5em 0;
+    color: #b3b3b3;
 }
 
 nav {
-    background-color: #002200;
+    background-color: #1a1a1a;
     overflow: hidden;
 }
 
@@ -48,13 +49,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #003300;
+    background-color: #333;
 }
 
 section {
     padding: 2em;
     margin: 1em;
-    background-color: #001a00;
+    background-color: #1a1a1a;
     border-radius: 5px;
     box-shadow: 0 0 10px #00FF00;
 }
@@ -64,10 +65,14 @@ section h2 {
     padding-bottom: 0.5em;
 }
 
+section p, section ul li, footer p {
+    color: #b3b3b3;
+}
+
 footer {
     text-align: center;
     padding: 1em 0;
-    background-color: #001a00;
+    background-color: #1a1a1a;
     color: #00FF00;
     position: fixed;
     width: 100%;
@@ -88,5 +93,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #00FF00;
 }
