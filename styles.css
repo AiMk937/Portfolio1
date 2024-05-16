@@ -120,8 +120,7 @@ a:hover {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
+    justify-content: space-between;
 }
 
 .project-box {
@@ -133,8 +132,9 @@ a:hover {
     border-radius: 5px;
     box-shadow: 0 0 5px #00FF00;
     transition: transform 0.3s;
-    width: calc(33% - 2em);
+    width: 30%; /* Adjust the width for the desired layout */
     box-sizing: border-box;
+    margin: 1% 0; /* Add margin for spacing between boxes */
 }
 
 .project-box img {
@@ -181,7 +181,8 @@ a:hover {
 
     .project-box {
         padding: 0.5em;
-        width: calc(100% - 1em);
+        width: 100%; /* Full width for mobile */
+        margin: 1em 0; /* Add margin for spacing between boxes */
     }
 }
 
@@ -212,7 +213,8 @@ a:hover {
 
     .project-box {
         padding: 1em;
-        width: calc(50% - 1em);
+        width: 48%; /* Two projects per row for tablet */
+        margin: 1% 0; /* Add margin for spacing between boxes */
     }
 }
 
