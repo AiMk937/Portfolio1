@@ -129,3 +129,7 @@ a:hover {
 .project-box:hover {
     transform: scale(1.02);
 }
+
+#contact {
+    margin-bottom: 100px; /* Add margin to ensure the footer does not cover the links */
+}
