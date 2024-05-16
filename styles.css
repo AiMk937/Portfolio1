@@ -4,11 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
-    background-image: url('media/background.jpeg'); /* Update the path to the new background image */
+    background-image: url('media/background.jpeg'); /* Updated background image path */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #d4d4d4;
+    overflow-x: hidden; /* Prevent sideways scrolling */
 }
 
 header {
@@ -51,24 +52,27 @@ nav ul li a {
     color: #d4d4d4;
     text-decoration: none;
     padding: 1em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #333;
+    background-color: #444;
+    color: #00FF00;
 }
 
 section {
     padding: 2em;
-    margin: 1em;
+    margin: 1em auto;
+    max-width: 90%;
     background-color: rgba(0, 26, 0, 0.8);
     border-radius: 5px;
     box-shadow: 0 0 10px #00FF00;
-    transition: transform 0.3s;
+    transition: transform 0.3s, max-width 0.3s;
 }
 
 section:hover {
     transform: scale(1.02);
+    max-width: 95%;
 }
 
 section h2 {
@@ -111,4 +115,17 @@ a:hover {
 
 .icon {
     margin-right: 0.5em;
+}
+
+.project-box {
+    padding: 1em;
+    margin: 1em 0;
+    background-color: rgba(0, 34, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00FF00;
+    transition: transform 0.3s;
+}
+
+.project-box:hover {
+    transform: scale(1.02);
 }
