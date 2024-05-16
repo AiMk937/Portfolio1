@@ -87,7 +87,7 @@ section p, section ul li, footer p {
 
 footer {
     text-align: center;
-    padding: 1em 0;
+    padding: 0.5em 0; /* Reduced footer size */
     background-color: rgba(0, 26, 0, 0.8);
     color: #d4d4d4;
     position: fixed;
