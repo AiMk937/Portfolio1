@@ -119,7 +119,7 @@ a:hover {
 
 .project-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Ensure the project boxes are displayed vertically */
 }
 
 .project-box {
@@ -137,4 +137,95 @@ a:hover {
 
 #contact {
     margin-bottom: 150px; /* Add margin to ensure the footer does not cover the links */
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    section {
+        padding: 1em;
+        margin: 1em auto;
+        max-width: 95%;
+    }
+
+    section:hover {
+        transform: none; /* Disable zoom effect on smaller screens */
+    }
+
+    .project-box {
+        padding: 0.5em;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    section {
+        padding: 1.5em;
+        margin: 1em auto;
+        max-width: 90%;
+    }
+
+    section:hover {
+        transform: scale(1.02); /* Enable zoom effect on tablet screens */
+    }
+
+    .project-box {
+        padding: 1em;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 0.5em;
+    }
+
+    section {
+        padding: 2em;
+        margin: 1em auto;
+        max-width: 80%;
+    }
+
+    section:hover {
+        transform: scale(1.02); /* Enable zoom effect on desktop screens */
+    }
+
+    .project-box {
+        padding: 1em;
+    }
 }
