@@ -63,4 +63,224 @@ nav ul li a:hover {
 
 /* Dropdown container */
 .dropdown {
-    position: relative
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 34, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #d4d4d4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #444;
+    color: #00FF00;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #444;
+    color: #00FF00;
+}
+
+section {
+    padding: 2em;
+    margin: 1em auto;
+    max-width: 90%;
+    background-color: rgba(0, 26, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00FF00;
+    transition: transform 0.3s, max-width 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+    max-width: 95%;
+}
+
+section h2 {
+    border-bottom: 2px solid #00FF00;
+    padding-bottom: 0.5em;
+    color: #00FF00;
+}
+
+section p, section ul li, footer p {
+    color: #d4d4d4;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: rgba(0, 26, 0, 0.8);
+    color: #d4d4d4;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 0.5em 0;
+}
+
+a {
+    color: #00FF00;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d4d4d4;
+}
+
+.icon {
+    margin-right: 0.5em;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(0, 34, 0, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #00FF00;
+    transition: transform 0.3s;
+    width: 30%; /* Adjust the width for the desired layout */
+    box-sizing: border-box;
+    margin: 1% 0; /* Add margin for spacing between boxes */
+}
+
+.project-box img {
+    width: 80%; /* Reduce image size */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.project-box:hover {
+    transform: scale(1.02);
+}
+
+#contact {
+    margin-bottom: 150px;
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    section {
+        padding: 1em;
+        margin: 1em auto;
+        max-width: 95%;
+    }
+
+    section:hover {
+        transform: none;
+    }
+
+    .project-box {
+        padding: 0.5em;
+        width: 100%; /* Full width for mobile */
+        margin: 1em 0; /* Add margin for spacing between boxes */
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 0.5em;
+    }
+
+    section {
+        padding: 1.5em;
+        margin: 1em auto;
+        max-width: 90%;
+    }
+
+    section:hover {
+        transform: scale(1.02);
+    }
+
+    .project-box {
+        padding: 1em;
+        width: 48%; /* Two projects per row for tablet */
+        margin: 1% 0; /* Add margin for spacing between boxes */
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin: 0 0.5em;
+    }
+
+    section {
+        padding: 2em;
+        margin: 1em auto;
+        max-width: 80%;
+    }
+
+    section:hover {
+        transform: scale(1.02);
+    }
+
+    .project-box {
+        padding: 1em;
+    }
+}
