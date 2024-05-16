@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
-    background-image: url('path/to/your/background-image.png'); /* Update the path to the new background image */
+    background-image: url('media/background.jpeg'); /* Update the path to the new background image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
