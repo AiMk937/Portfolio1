@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
-    background-image: url('path/to/your/background-image.png');
+    background-image: url('path/to/your/background-image.png'); /* Update the path to the new background image */
     background-size: cover;
     background-position: center;
     color: #00FF00;
@@ -49,6 +49,7 @@ nav ul li a {
     color: #00FF00;
     text-decoration: none;
     padding: 1em;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
@@ -61,6 +62,11 @@ section {
     background-color: rgba(0, 26, 0, 0.8);
     border-radius: 5px;
     box-shadow: 0 0 10px #00FF00;
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
 }
 
 section h2 {
@@ -92,10 +98,12 @@ ul li {
 
 a {
     color: #00FF00;
+    transition: color 0.3s;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #b3b3b3;
 }
 
 .icon {
