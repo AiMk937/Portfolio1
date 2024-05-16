@@ -4,15 +4,16 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #121212;
-    background-image: url('media/background.jpeg'); /* Update the path to the new background image */
+    background-image: url('path/to/your/background-image.png'); /* Update the path to the new background image */
     background-size: cover;
     background-position: center;
-    color: #00FF00;
+    background-attachment: fixed;
+    color: #d4d4d4;
 }
 
 header {
     background-color: rgba(0, 26, 0, 0.8);
-    color: #00FF00;
+    color: #d4d4d4;
     text-align: center;
     padding: 1em 0;
 }
@@ -20,11 +21,12 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    color: #00FF00;
 }
 
 header p {
     margin: 0.5em 0;
-    color: #b3b3b3;
+    color: #d4d4d4;
 }
 
 nav {
@@ -46,7 +48,7 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: #00FF00;
+    color: #d4d4d4;
     text-decoration: none;
     padding: 1em;
     transition: background-color 0.3s;
@@ -72,17 +74,18 @@ section:hover {
 section h2 {
     border-bottom: 2px solid #00FF00;
     padding-bottom: 0.5em;
+    color: #00FF00;
 }
 
 section p, section ul li, footer p {
-    color: #b3b3b3;
+    color: #d4d4d4;
 }
 
 footer {
     text-align: center;
     padding: 1em 0;
     background-color: rgba(0, 26, 0, 0.8);
-    color: #00FF00;
+    color: #d4d4d4;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -103,7 +106,7 @@ a {
 
 a:hover {
     text-decoration: underline;
-    color: #b3b3b3;
+    color: #d4d4d4;
 }
 
 .icon {
