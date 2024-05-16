@@ -119,8 +119,9 @@ a:hover {
 
 .project-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 
 .project-box {
@@ -128,13 +129,12 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    margin: 1em 0;
     background-color: rgba(0, 34, 0, 0.8);
     border-radius: 5px;
     box-shadow: 0 0 5px #00FF00;
     transition: transform 0.3s;
-    width: 100%;
-    max-width: 600px;
+    width: calc(33% - 2em);
+    box-sizing: border-box;
 }
 
 .project-box img {
@@ -181,6 +181,7 @@ a:hover {
 
     .project-box {
         padding: 0.5em;
+        width: calc(100% - 1em);
     }
 }
 
@@ -211,6 +212,7 @@ a:hover {
 
     .project-box {
         padding: 1em;
+        width: calc(50% - 1em);
     }
 }
 
