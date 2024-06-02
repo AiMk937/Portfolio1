@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aimaan Khan</title>
+    <title>Aimaan Khan's Personal Webpage</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
             <li><a href="#qualifications">Qualifications</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><button id="theme-toggle" onclick="toggleTheme()">Dark Mode</button></li>
+            <li><button id="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button></li>
         </ul>
     </nav>
     <section id="about">
@@ -73,10 +74,22 @@
     <section id="certifications">
         <h2>Certifications</h2>
         <ul>
-            <li>Demystifying Networking certification by Swayam (2023)</li>
-            <li>HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)</li>
-            <li>AI/ML workshop by Techobyte at IITB</li>
-            <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+            <li>
+                <a href="media/demystifying_networking_certificate.jpg" data-lightbox="certificates" data-title="Demystifying Networking certification by Swayam (2023)">Demystifying Networking certification by Swayam (2023)</a>
+                <img src="media/demystifying_networking_certificate.jpg" alt="Demystifying Networking certification" class="certificate-thumbnail">
+            </li>
+            <li>
+                <a href="media/html_css_javascript_certificate.jpg" data-lightbox="certificates" data-title="HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)">HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)</a>
+                <img src="media/html_css_javascript_certificate.jpg" alt="HTML, CSS & JavaScript for Web Development" class="certificate-thumbnail">
+            </li>
+            <li>
+                <a href="media/AIML.jpg" data-lightbox="certificates" data-title="AI/ML workshop by Techobyte at IITB">AI/ML workshop by Techobyte at IITB</a>
+                <img src="media/AIML.jpg" alt="AI/ML workshop by Techobyte at IITB" class="certificate-thumbnail">
+            </li>
+            <li>
+                <a href="media/AWS CF.jpg" data-lightbox="certificates" data-title="AWS Academy Graduate - AWS Academy Cloud Foundations">AWS Academy Graduate - AWS Academy Cloud Foundations</a>
+                <img src="media/AWS CF.jpg" alt="AWS Academy Cloud Foundations" class="certificate-thumbnail">
+            </li>
         </ul>
     </section>
     <section id="contact">
@@ -94,5 +107,6 @@
         <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
     </footer>
     <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
