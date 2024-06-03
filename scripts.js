@@ -23,4 +23,29 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem('theme', '');
         }
     };
+
+    // Form submission handler
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        fetch('https://formspree.io/f/mpzvgrjj', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: this.name.value,
+                email: this.email.value,
+                message: this.message.value
+            })
+        }).then(response => {
+            if (response.ok) {
+                alert('Your message has been sent!');
+                this.reset();
+            } else {
+                alert('Failed to send message. Please try again later.');
+            }
+        }).catch(error => {
+            alert('Failed to send message. Please try again later.');
+        });
+    });
 });

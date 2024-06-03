@@ -6,105 +6,161 @@
     <title>Aimaan Khan's Personal Webpage</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <header>
-        <h1>Aimaan Khan</h1>
-        <p>Mumbai, India | <a href="mailto:aimaanjkhaan@gmail.com">aimaanjkhaan@gmail.com</a> | +91 99877 86026</p>
+        <div class="container">
+            <h1>Aimaan Khan</h1>
+            <p>Mumbai, India | <a href="mailto:aimaanjkhaan@gmail.com">aimaanjkhaan@gmail.com</a> | +91 99877 86026</p>
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#qualifications">Qualifications</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button id="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button></li>
-        </ul>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" onclick="toggleTheme()">Dark Mode</button></li>
+            </ul>
+        </div>
     </nav>
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a self-motivated student seeking an internship opportunity in a dynamic and innovative organization. My goal is to acquire knowledge and experience while contributing to software development projects. I am open to all assignments and eager to leverage my technical and creative skills to excel in a challenging software developer role, working on the development and maintenance of innovative software solutions.</p>
-    </section>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a self-motivated student seeking an internship opportunity in a dynamic and innovative organization. My goal is to acquire knowledge and experience while contributing to software development projects. I am open to all assignments and eager to leverage my technical and creative skills to excel in a challenging software developer role, working on the development and maintenance of innovative software solutions.</p>
+        </div>
+    </section>       
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="media/currency_converter.jpeg" alt="Currency Converter">
-                <h3><a href="project1.html">Currency Converter</a></h3>
-                <p>Currency converter based on Java (API integration for real-time conversion rates)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/2048_game.jpeg" alt="2048 Game">
-                <h3><a href="project2.html">2048 Game</a></h3>
-                <p>2048 game using PYgame Python library (Implemented PyGame library into the game)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/automated_water_irrigation_system.jpeg" alt="Automated Water Irrigation System">
-                <h3><a href="project3.html">Automated Water Irrigation System</a></h3>
-                <p>IOT based Automated water irrigation system (Hardware selection and IOT integration between code and hardware)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/ai_image_upscaler.jpeg" alt="AI Image Upscaler">
-                <h3><a href="project4.html">AI Image Upscaler</a></h3>
-                <p>AI image Upscaler using CNN (Developed an AI software which improves image quality)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker">
-                <h3><a href="project5.html">Vehicle Location and Speed Tracker</a></h3>
-                <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles)</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-box">
+                    <img src="media/currency_converter.jpeg" alt="Currency Converter">
+                    <h3><a href="project1.html">Currency Converter</a></h3>
+                    <p>Currency converter based on Java (API integration for real-time conversion rates)</p>
+                </div>
+                <div class="project-box">
+                    <img src="media/2048_game.jpeg" alt="2048 Game">
+                    <h3><a href="project2.html">2048 Game</a></h3>
+                    <p>2048 game using PYgame Python library (Implemented PyGame library into the game)</p>
+                </div>
+                <div class="project-box">
+                    <img src="media/automated_water_irrigation_system.jpeg" alt="Automated Water Irrigation System">
+                    <h3><a href="project3.html">Automated Water Irrigation System</a></h3>
+                    <p>IOT based Automated water irrigation system (Hardware selection and IOT integration between code and hardware)</p>
+                </div>
+                <div class="project-box">
+                    <img src="media/ai_image_upscaler.jpeg" alt="AI Image Upscaler">
+                    <h3><a href="project4.html">AI Image Upscaler</a></h3>
+                    <p>AI image Upscaler using CNN (Developed an AI software which improves image quality)</p>
+                </div>
+                <div class="project-box">
+                    <img src="media/vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker">
+                    <h3><a href="project5.html">Vehicle Location and Speed Tracker</a></h3>
+                    <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles)</p>
+                </div>
             </div>
         </div>
-    </section>
-    <section id="qualifications">
-        <h2>Qualifications</h2>
-        <h3>Education</h3>
-        <ul>
-            <li><strong>Mumbai University</strong>, Mumbai, India | BE in Computer Engineering (Currently pursuing 3rd year)</li>
-            <li><strong>RIMS International Junior College</strong>, Mumbai, India | 12th HSC | Scored: 63.85%</li>
-            <li><strong>St. Mary's High School</strong>, Mumbai, India | 10th SSC | Scored: 73%</li>
-        </ul>
-        <h3>Skills & Abilities</h3>
-        <ul>
-            <li>Proficient in programming languages: HTML, CSS, JavaScript, SQL, C, Python, Java</li>
-            <li>Soft skills: Communication, Teamwork, Adaptability, Problem Solving, Leadership, Emotional Intelligence</li>
-        </ul>
-    </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>
-                <a href="media/demystifying_networking_certificate.jpg" data-lightbox="certificates" data-title="Demystifying Networking certification by Swayam (2023)">Demystifying Networking certification by Swayam (2023)</a>
-                <img src="media/demystifying_networking_certificate.jpg" alt="Demystifying Networking certification" class="certificate-thumbnail">
-            </li>
-            <li>
-                <a href="media/html_css_javascript_certificate.jpg" data-lightbox="certificates" data-title="HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)">HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)</a>
-                <img src="media/html_css_javascript_certificate.jpg" alt="HTML, CSS & JavaScript for Web Development" class="certificate-thumbnail">
-            </li>
-            <li>
-                <a href="media/AIML.jpg" data-lightbox="certificates" data-title="AI/ML workshop by Techobyte at IITB">AI/ML workshop by Techobyte at IITB</a>
-                <img src="media/AIML.jpg" alt="AI/ML workshop by Techobyte at IITB" class="certificate-thumbnail">
-            </li>
-            <li>
-                <a href="media/AWS CF.jpg" data-lightbox="certificates" data-title="AWS Academy Graduate - AWS Academy Cloud Foundations">AWS Academy Graduate - AWS Academy Cloud Foundations</a>
-                <img src="media/AWS CF.jpg" alt="AWS Academy Cloud Foundations" class="certificate-thumbnail">
-            </li>
-        </ul>
-    </section>
+        <section id="qualifications">
+            <div class="container">
+                <h2>Qualifications</h2>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><i class="fas fa-graduation-cap icon"></i> <strong>Mumbai University</strong>, Mumbai, India | BE in Computer Engineering (Currently pursuing 3rd year)</li>
+                        <li><i class="fas fa-school icon"></i> <strong>RIMS International Junior College</strong>, Mumbai, India | 12th HSC | Scored: 63.85%</li>
+                        <li><i class="fas fa-school icon"></i> <strong>St. Mary's High School</strong>, Mumbai, India | 10th SSC | Scored: 73%</li>
+                    </ul>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-box">
+                        <h4><i class="fas fa-code icon"></i> Programming Languages</h4>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="skills-box">
+                        <h4><i class="fas fa-lightbulb icon"></i> Soft Skills</h4>
+                        <ul>
+                            <li>Communication</li>
+                            <li>Teamwork</li>
+                            <li>Adaptability</li>
+                            <li>Problem Solving</li>
+                            <li>Leadership</li>
+                            <li>Emotional Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        
+        <section id="certifications">
+            <div class="container">
+                <h2>Certifications</h2>
+                <div class="certification-container">
+                    <div class="certification-box">
+                        <a href="media/NPTEL.jpg" data-lightbox="certificates" data-title="Demystifying Networking certification by Swayam (2023)">
+                            <img src="media/NPTEL.jpg" alt="Demystifying Networking certification">
+                        </a>
+                        <h3>Demystifying Networking certification by Swayam (2023)</h3>
+                    </div>
+                    <div class="certification-box">
+                        <a href="media/WEB-DEV.jpg" data-lightbox="certificates" data-title="HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)">
+                            <img src="media/WEB-DEV.jpg" alt="HTML, CSS & JavaScript for Web Development">
+                        </a>
+                        <h3>HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)</h3>
+                    </div>
+                    <div class="certification-box">
+                        <a href="media/AIML.jpg" data-lightbox="certificates" data-title="AI/ML workshop by Techobyte at IITB">
+                            <img src="media/AIML.jpg" alt="AI/ML workshop by Techobyte at IITB">
+                        </a>
+                        <h3>AI/ML workshop by Techobyte at IITB</h3>
+                    </div>
+                    <div class="certification-box">
+                        <a href="media/AWS CF.jpg" data-lightbox="certificates" data-title="AWS Academy Graduate - AWS Academy Cloud Foundations">
+                            <img src="media/AWS CF.jpg" alt="AWS Academy Cloud Foundations">
+                        </a>
+                        <h3>AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:aimaanjkhaan@gmail.com"><i class="fas fa-envelope icon"></i>aimaanjkhaan@gmail.com</a></p>
-        <p>Mobile: <i class="fas fa-phone icon"></i>+91 99877 86026</p>
-        <p>Connect with me on:</p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/aimaan-khan-56a621250/"><i class="fab fa-linkedin icon"></i>LinkedIn</a></li>
-            <li><a href="https://github.com/AiMk937"><i class="fab fa-github icon"></i>GitHub</a></li>
-            <li><a href="https://www.instagram.com/__aimaan_k__/"><i class="fab fa-instagram icon"></i>Instagram</a></li>
-        </ul>
-    </section>
+        <div class="container contact-container">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <p><a href="mailto:aimaanjkhaan@gmail.com"><i class="fas fa-envelope icon"></i> aimaanjkhaan@gmail.com</a></p>
+                <p><i class="fas fa-phone icon"></i> +91 99877 86026</p>
+                <p>Connect with me on:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/aimaan-khan-56a621250/"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/AiMk937"><i class="fab fa-github icon"></i> GitHub</a></li>
+                    <li><a href="https://www.instagram.com/__aimaan_k__/"><i class="fab fa-instagram icon"></i> Instagram</a></li>
+                </ul>
+                <p><a href="resume.pdf" class="button">Download Resume</a></p>
+            </div>
+            <form action="https://formspree.io/f/mpzvgrjj" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
+    </section>                
     <footer>
-        <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
+        </div>
     </footer>
     <script src="scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
