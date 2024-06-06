@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     const body = document.body;
     const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = themeToggleBtn.querySelector('i');
 
     // Check the local storage for theme preference
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
         body.classList.add(currentTheme);
         if (currentTheme === 'dark-mode') {
-            themeToggleBtn.textContent = 'Switch to Light Mode';
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
         }
     }
 
@@ -16,10 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.toggle('dark-mode');
 
         if (body.classList.contains('dark-mode')) {
-            themeToggleBtn.textContent = 'Switch to Light Mode';
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
             localStorage.setItem('theme', 'dark-mode');
         } else {
-            themeToggleBtn.textContent = 'Switch to Dark Mode';
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
             localStorage.setItem('theme', '');
         }
     };
@@ -48,4 +52,14 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('Failed to send message. Please try again later.');
         });
     });
+
+    // Navbar toggle function
+    window.toggleNavbar = function() {
+        var navbar = document.getElementById('navbar');
+        if (navbar.classList.contains('hidden')) {
+            navbar.classList.remove('hidden');
+        } else {
+            navbar.classList.add('hidden');
+        }
+    };
 });
