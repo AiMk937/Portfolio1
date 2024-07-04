@@ -1,189 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aimaan Khan's Personal Webpage</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RCOE Student Handbook</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="landing-page">
-        <div class="landing-content">
-            <h1>Aimaan Khan</h1>
-            <p class="contact-icons">
-                <a href="mailto:aimaanjkhaan@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/aimaan-khan-56a621250/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/AiMk937" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/__aimaan_k__/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </p>
-            <button class="menu-icon" onclick="toggleNavbar()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="navbar" class="hidden">
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#qualifications">Qualifications</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="RCOE" class="logo"> RCOE Handbook</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conduct">Code of Conduct</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mentoring">Mentoring</a></li>
+        <li class="nav-item"><a class="nav-link" href="#welfare">Welfare Schemes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#placements">Placements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
+        <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a self-motivated student seeking an internship opportunity in a dynamic and innovative organization. My goal is to acquire knowledge and experience while contributing to software development projects. I am open to all assignments and eager to leverage my technical and creative skills to excel in a challenging software developer role, working on the development and maintenance of innovative software solutions.</p>
-        </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home" class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Welcome to Rizvi College of Engineering</h1>
+      <p class="lead">This is the official Student Handbook website, where you can find all the necessary information regarding our policies, programs, and facilities.</p>
+    </div>
+  </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-container">
-            <div class="project-box">
-                <img src="media/currency_converter.jpeg" alt="Currency Converter">
-                <h3><a href="project1.html">Currency Converter</a></h3>
-                <p>Currency converter based on Java (API integration for real-time conversion rates)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/2048_game.jpeg" alt="2048 Game">
-                <h3><a href="project2.html">2048 Game</a></h3>
-                <p>2048 game using PYgame Python library (Implemented PyGame library into the game)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/automated_water_irrigation_system.jpeg" alt="Automated Water Irrigation System">
-                <h3><a href="project3.html">Automated Water Irrigation System</a></h3>
-                <p>IOT based Automated water irrigation system (Hardware selection and IOT integration between code and hardware)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/ai_image_upscaler.jpeg" alt="AI Image Upscaler">
-                <h3><a href="project4.html">AI Image Upscaler</a></h3>
-                <p>AI image Upscaler using CNN (Developed an AI software which improves image quality)</p>
-            </div>
-            <div class="project-box">
-                <img src="media//vehicle_location_and_speed_tracker.jpeg" alt="Vehicle Location and Speed Tracker">
-                <h3><a href="project5.html">Vehicle Location and Speed Tracker</a></h3>
-                <p>IOT based vehicle Location and speed tracker (Developed an IOT based location and speed tracker for vehicles)</p>
-            </div>
-            <div class="project-box">
-                <img src="media/portfolio.jpeg" alt="Personal Portfolio Website">
-                <h3><a href="project6.html">Personal Portfolio Website</a></h3>
-                <p>A personal portfolio website to showcase projects and qualifications (Developed using HTML, CSS, JavaScript)</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="qualifications">
-        <div class="container">
-            <h2>Qualifications</h2>
-            <div class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li><i class="fas fa-graduation-cap icon"></i> <strong>Mumbai University</strong>, Mumbai, India | BE in Computer Engineering (Currently pursuing 3rd year)</li>
-                    <li><i class="fas fa-school icon"></i> <strong>RIMS International Junior College</strong>, Mumbai, India | 12th HSC | Scored: 63.85%</li>
-                    <li><i class="fas fa-school icon"></i> <strong>St. Mary's High School</strong>, Mumbai, India | 10th SSC | Scored: 73%</li>
-                </ul>
-            </div>
-            <div class="skills-container">
-                <div class="skills-box">
-                    <h4><i class="fas fa-code icon"></i> Programming Languages</h4>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                        <li>C</li>
-                        <li>Python</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-                <div class="skills-box">
-                    <h4><i class="fas fa-lightbulb icon"></i> Soft Skills</h4>
-                    <ul>
-                        <li>Communication</li>
-                        <li>Teamwork</li>
-                        <li>Adaptability</li>
-                        <li>Problem Solving</li>
-                        <li>Leadership</li>
-                        <li>Emotional Intelligence</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>        
-    
-    <section id="certifications">
-        <div class="container">
-            <h2>Certifications</h2>
-            <div class="certification-container">
-                <div class="certification-box">
-                    <a href="media/NPTEL.jpg" data-lightbox="certificates" data-title="Demystifying Networking certification by Swayam (2023)">
-                        <img src="media/NPTEL.jpg" alt="Demystifying Networking certification">
-                    </a>
-                    <h3>Demystifying Networking certification by Swayam (2023)</h3>
-                </div>
-                <div class="certification-box">
-                    <a href="media/WEB-DEV.jpg" data-lightbox="certificates" data-title="HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)">
-                        <img src="media/WEB-DEV.jpg" alt="HTML, CSS & JavaScript for Web Development">
-                    </a>
-                    <h3>HTML, CSS & JavaScript for Web Development by John Hopkins University (2023)</h3>
-                </div>
-                <div class="certification-box">
-                    <a href="media/AIML.jpg" data-lightbox="certificates" data-title="AI/ML workshop by Techobyte at IITB">
-                        <img src="media/AIML.jpg" alt="AI/ML workshop by Techobyte at IITB">
-                    </a>
-                    <h3>AI/ML workshop by Techobyte at IITB</h3>
-                </div>
-                <div class="certification-box">
-                    <a href="media/AWS CF.jpg" data-lightbox="certificates" data-title="AWS Academy Graduate - AWS Academy Cloud Foundations">
-                        <img src="media/AWS CF.jpg" alt="AWS Academy Cloud Foundations">
-                    </a>
-                    <h3>AWS Academy Graduate - AWS Academy Cloud Foundations</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <div class="container contact-container">
-            <h2>Contact</h2>
-            <div class="contact-details">
-                <p><a href="mailto:aimaanjkhaan@gmail.com"><i class="fas fa-envelope icon"></i> aimaanjkhaan@gmail.com</a></p>
-                <p><i class="fas fa-phone icon"></i> +91 99877 86026</p>
-                <p>Connect with me on:</p>
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/aimaan-khan-56a621250/"><i class="fab fa-linkedin icon"></i> LinkedIn</a></li>
-                    <li><a href="https://github.com/AiMk937"><i class="fab fa-github icon"></i> GitHub</a></li>
-                    <li><a href="https://www.instagram.com/__aimaan_k__/"><i class="fab fa-instagram icon"></i> Instagram</a></li>
-                </ul>
-                <p><a href="media/Resume_AimaanKhan.pdf" class="button">Download Resume</a></p>
-            </div>
-            <form action="https://formspree.io/f/mpzvgrjj" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="button">Send Message</button>
-            </form>
-        </div>
-    </section>                
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Aimaan Khan. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script>
-        function toggleNavbar() {
-            var navbar = document.getElementById('navbar');
-            if (navbar.classList.contains('hidden')) {
-                navbar.classList.remove('hidden');
-            } else {
-                navbar.classList.add('hidden');
-            }
-        }
-    </script>
+  <!-- About Us Section -->
+  <section id="about" class="container my-5">
+    <h2>About Us</h2>
+    <h3>Vision of the Institute</h3>
+    <p>To become a leading entity in transforming the diverse class of learners into innovators, analyzers, and entrepreneurs competent to develop eco-friendly sustainable solutions and work in multi-disciplinary environments to meet global challenges and contribute towards nation building.</p>
+    <h3>Mission of the Institute</h3>
+    <ul>
+      <li>To impart core fundamental principles of engineering and science through conventional and innovative methods.</li>
+      <li>To bridge the industry–academia gap through curriculum enrichment activities for industry readiness.</li>
+      <li>To groom learners through well-planned training & placement activities laced with professional etiquettes and ethics.</li>
+      <li>To provide modern infrastructure and necessary resources for innovative research ideas.</li>
+    </ul>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="container my-5">
+    <h2>Programs</h2>
+    <p>List of engineering programs offered at RCOE:</p>
+    <ul>
+      <li>Artificial Intelligence & Data Science Engineering</li>
+      <li>Civil Engineering</li>
+      <li>Computer Engineering</li>
+      <li>Electronics & Computer Science</li>
+      <li>Mechanical Engineering</li>
+    </ul>
+  </section>
+
+  <!-- Code of Conduct Section -->
+  <section id="conduct" class="container my-5">
+    <h2>Code of Conduct</h2>
+    <p>RCOE students are required to observe discipline and conduct themselves responsibly.</p>
+    <ul>
+      <li>General Discipline</li>
+      <li>Classroom Discipline</li>
+      <li>Library Discipline</li>
+      <li>Examination Discipline</li>
+    </ul>
+  </section>
+
+  <!-- Mentoring Section -->
+  <section id="mentoring" class="container my-5">
+    <h2>Mentoring Policies</h2>
+    <p>Effective multi-tier mentoring system based on the gravity of the issues faced by the students is designed and implemented.</p>
+    <ul>
+      <li>Mentor-Mentees System for Resolving particular Academic and Non-Academic issues</li>
+      <li>Class Teacher – Mentees System for resolving purely Academic related issues</li>
+      <li>HoD / Coordinator – Mentees System for resolving complex issues</li>
+      <li>Principal – Mentees System for resolving Sensitive / Critical issues</li>
+      <li>Professional Counsellors – Mentees System for handling clinical or psychological issues</li>
+      <li>Career Counsellors</li>
+    </ul>
+  </section>
+
+  <!-- Welfare Schemes Section -->
+  <section id="welfare" class="container my-5">
+    <h2>Welfare Schemes</h2>
+    <p>RCOE is committed to reach out to the diverse class of learners to help them transform into world-class engineers. The following welfare schemes are in implementation:</p>
+    <ul>
+      <li>Library Welfare Schemes</li>
+      <li>Sarojini Naidu Scholarship</li>
+      <li>Abis Rizvi Scholarship</li>
+      <li>Sponsorship as boosting measure to Students</li>
+      <li>Seed Funding</li>
+    </ul>
+  </section>
+
+  <!-- Placements Section -->
+  <section id="placements" class="container my-5">
+    <h2>Training, Placements & Internships</h2>
+    <p>The Training and Placement Cell at RCOE is a year-round active body committed to work with agencies/industries/organizations to help students get placed for internships and jobs.</p>
+    <ul>
+      <li>Placements and Internships</li>
+      <li>Training sessions conducted for students</li>
+      <li>Counseling for Higher Studies</li>
+    </ul>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="container my-5">
+    <h2>Facilities</h2>
+    <ul>
+      <li>Library</li>
+      <li>Labs and Workshops</li>
+      <li>Sports and Recreation</li>
+    </ul>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback" class="container my-5">
+    <h2>Feedback</h2>
+    <p>Feedback is the key to make any endeavor a success. In the process of working towards its vision and to accomplish its mission, RCOE has been continuously working on improving its infrastructure, quality of learning resources, and quality of curriculum delivery.</p>
+    <ul>
+      <li>Academic Feedback</li>
+      <li>Feedback on Infrastructure and Facilities</li>
+      <li>Suggestion Box</li>
+    </ul>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="container my-5">
+    <h2>Contact Us</h2>
+    <p>For any inquiries or feedback, please contact us at:</p>
+    <address>
+      Rizvi College of Engineering<br>
+      Bandra West, Mumbai, Maharashtra, India<br>
+      Email: info@rizvi.edu.in<br>
+      Phone: +91 22 2604 3434
+    </address>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Rizvi College of Engineering</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
